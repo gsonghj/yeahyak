@@ -3,7 +3,7 @@ services:
   # Frontend (React + Caddy, 자동 HTTPS)
   # ==========================================
   caddy:
-    image: ghcr.io/songhj9810/yeahyak-frontend:latest
+    image: ghcr.io/gsonghj/yeahyak-frontend:latest
     build:
       context: frontend
       dockerfile: Dockerfile
@@ -29,7 +29,7 @@ services:
   # Backend (Spring Boot)
   # ==========================================
   backend:
-    image: ghcr.io/songhj9810/yeahyak-backend:latest
+    image: ghcr.io/gsonghj/yeahyak-backend:latest
     build:
       context: backend
       dockerfile: Dockerfile
@@ -64,7 +64,7 @@ services:
   # AI (Flask)
   # ==========================================
   ai:
-    image: ghcr.io/songhj9810/yeahyak-ai:latest
+    image: ghcr.io/gsonghj/yeahyak-ai:latest
     build:
       context: ai
       dockerfile: Dockerfile
